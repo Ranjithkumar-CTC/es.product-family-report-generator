@@ -1,0 +1,17 @@
+{
+  "name": "es.product-family-report-generator",
+  "version": "1.0.0",
+  "description": "es.product-family-report-generator",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Ranjithkumar PC",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^10.2.6",
+    "husky": "^8.0.3",
+    "json2csv": "^6.0.0-alpha.2",
+    "node-recursive-directory": "^1.2.0"
+  }
+}
