@@ -4,7 +4,7 @@ const fs = require('fs');
 const getFiles = require('node-recursive-directory');
 const { Parser } = require('json2csv');
 
-const filesFolder = '../TEST/';
+const filesFolder = '../LOGS/es.product-family.cds-sbt/';
 const report = [];
 const fields = ["Family-ID", "errors"];
 
@@ -55,6 +55,7 @@ async function getDetails() {
   });
 
   const csv = parser.parse(report);
+  // console.log(report)
   fs.writeFileSync(`REPORT/report_${Date.now()}.csv`, csv, {encoding: 'utf-8'});
 }
 
